@@ -29,6 +29,21 @@ columns = data["DataFields"]
 # Make a DataFrame
 df = pd.DataFrame(rows, columns=columns)
 
+# Clean up column names
+df.columns = [
+    "Bib",
+    "ID",
+    "OverallRank",
+    "GenderRank",
+    "Division",
+    "Name",
+    "Location",
+    "Age",
+    "Gender",
+    "FinishTime",
+    "Pace_min_per_km"
+]
+
 print(df.head())
 print(f"\nTotal rows: {len(df)}")
 
