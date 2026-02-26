@@ -33,4 +33,4 @@ print(df.head())
 print(f"\nTotal rows: {len(df)}")
 
 # Optional: save as CSV
-df.to_csv(r"C:\Users\NikiReker\OneDrive - Concord\Desktop\birkie_results.csv", index=False)
+df.to_csv(r"<file_path>", index=False)
